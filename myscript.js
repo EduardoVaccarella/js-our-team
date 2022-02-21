@@ -50,6 +50,11 @@ const team = [
 
 
 
+
+creaMembroTeam("Eduardo Vaccarella", "Ceo", "eduardo-vaccarella.jpg");
+
+
+
 const teamContainer = document.querySelector('.team-container');
 
 let i = 1;
@@ -71,4 +76,16 @@ for(i; i < team.length; i++) {
   teamContainer.innerHTML += card;
 }
 
-console.log(i);
+// bonus: creiamo una funzione
+
+function creaMembroTeam(name, role, image) {
+
+  let newMembroTeam = {
+    name: name,
+    role: role,
+    image: image,
+  }
+
+  team.push(newMembroTeam);
+
+}
