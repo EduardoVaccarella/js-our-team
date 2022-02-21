@@ -61,7 +61,7 @@ let i = 1;
 
 for(i; i < team.length; i++) {
   
-  let cardImageImg = `<img scr=img/${team[i].image}>`;
+  let cardImageImg = `<img src=img/${team[i].image}>`;
 
   let cardImage = `<div class="card-image">${cardImageImg}</div>`;
 
